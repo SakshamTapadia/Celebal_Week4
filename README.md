@@ -1,20 +1,20 @@
-# 📧 Spam Email Detection System
+# Spam Email Detection System
 
 A **production-grade machine learning system** to classify spam vs ham emails using classical ML and deep learning models. Built with modularity, scalability, and best practices in mind.
 
-## 🚀 Features
+## Features
 
-- 📂 Modular architecture with clean code separation
-- ⚙️ Configuration-driven pipeline (YAML)
-- 🧠 Multiple models: Logistic Regression, SVM, Random Forest, XGBoost, LSTM, CNN, BERT
-- 🧪 Cross-validation and Optuna-based hyperparameter tuning
-- 📈 Rich evaluation (AUC, confusion matrix, ROC, PR curve)
-- 💡 Interpretability with SHAP (optional)
-- 🐳 Containerized with Docker
-- 🧾 CLI + API-ready prediction layer
-- ✅ Unit test-ready and extensible
+- Modular architecture with clean code separation
+- Configuration-driven pipeline (YAML)
+- Multiple models: Logistic Regression, SVM, Random Forest, XGBoost, LSTM, CNN, BERT
+- Cross-validation and Optuna-based hyperparameter tuning
+- Rich evaluation (AUC, confusion matrix, ROC, PR curve)
+- Interpretability with SHAP (optional)
+- Containerized with Docker
+- CLI + API-ready prediction layer
+- Unit test-ready and extensible
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 ├── config/
@@ -46,7 +46,7 @@ A **production-grade machine learning system** to classify spam vs ham emails us
 └── README.md
 ```
 
-## 📦 Setup Instructions
+## Setup Instructions
 
 ```bash
 # Clone repo and install dependencies
@@ -55,7 +55,7 @@ cd spam-detector
 pip install -r requirements.txt
 ```
 
-## 🧠 Training a Model
+## Training a Model
 
 ```bash
 python train.py
@@ -63,21 +63,21 @@ python train.py
 
 Trains model based on config in `config/config.yaml` and saves artifacts in `artifacts/`.
 
-## 🔍 Making Predictions
+## Making Predictions
 
 ```bash
 python predict.py "Win a free iPhone by replying now!"
 # Output: SPAM
 ```
 
-## 🐳 Docker Support
+## Docker Support
 
 ```bash
 docker build -t spam-detector .
 docker run --rm spam-detector "This is a limited-time offer!"
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 Modify `config/config.yaml`:
 
@@ -92,20 +92,19 @@ features:
   ngram_range: [1, 2]
 ```
 
-## 📊 Evaluation Metrics
+## Evaluation Metrics
 
 After training:
 - Precision, Recall, F1, AUC
 - Confusion Matrix Heatmap
 - ROC and PR Curves
 
-## 📚 Future Improvements
+## Future Improvements
 
 - [ ] Add REST API via FastAPI
 - [ ] Integrate MLFlow for experiment tracking
-- [ ] Add LIME/SHAP interpretability
 
-## 👩‍💻 Maintainer
+## Maintainer
 
 Built by Saksham Tapadia
 License: MIT
